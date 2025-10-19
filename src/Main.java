@@ -21,5 +21,14 @@ public class Main {
         for (int i = 0; i < resultDiff.length; i++) {
             System.out.print(resultDiff[i]);
         }
+
+        System.out.println();
+
+        //3
+        int[] resultMul = BigNumberCalculator.multiply(a, 2);
+        System.out.print("Multiplication = ");
+        for (int i = 0; i < resultMul.length; i++) {
+            System.out.print(resultMul[i]);
+        }
     }
 }
