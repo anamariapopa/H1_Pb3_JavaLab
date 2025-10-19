@@ -49,4 +49,29 @@ public class BigNumberCalculator {
         result[0] = carry;
         return result;
     }
+
+    //4
+    public static int[] divide(int[] a, int number) {
+        int n = a.length;
+        int[] result = new int[n];
+        int remainder = 0;
+
+        for (int i = 0; i < n; i++) {
+            int current = remainder * 10 + a[i];
+            result[i] = current / number;
+            remainder = current % number;
+        }
+
+        return result;
+    }
+
+    //print without the (possible) 0 from the beginning
+    public static void printNumber(int[] number) {
+        int i = 0;
+        while (i < number.length - 1 && number[i] == 0)
+            i++;
+        for (; i < number.length; i++)
+            System.out.print(number[i]);
+        System.out.println();
+    }
 }

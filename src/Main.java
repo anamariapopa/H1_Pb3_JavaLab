@@ -9,26 +9,21 @@ public class Main {
         //1
         int[] resultAdd = BigNumberCalculator.add(a, b);
         System.out.print("Addition = ");
-        for (int i = 0; i < resultAdd.length; i++) {
-            System.out.print(resultAdd[i]);
-        }
-
-        System.out.println();
+        BigNumberCalculator.printNumber(resultAdd);
 
         //2
         int[] resultDiff = BigNumberCalculator.substract(c, d);
         System.out.print("Substraction = ");
-        for (int i = 0; i < resultDiff.length; i++) {
-            System.out.print(resultDiff[i]);
-        }
-
-        System.out.println();
+        BigNumberCalculator.printNumber(resultDiff);
 
         //3
         int[] resultMul = BigNumberCalculator.multiply(a, 2);
         System.out.print("Multiplication = ");
-        for (int i = 0; i < resultMul.length; i++) {
-            System.out.print(resultMul[i]);
-        }
+        BigNumberCalculator.printNumber(resultMul);
+
+        //4
+        int[] resultDiv = BigNumberCalculator.divide(a, 2);
+        System.out.print("Division = ");
+        BigNumberCalculator.printNumber(resultDiv);
     }
 }
